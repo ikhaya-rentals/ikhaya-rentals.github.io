@@ -43,6 +43,7 @@ h2{font-size:1.4rem;margin:0 0 14px}
 form{display:grid;gap:10px}
 label{font-weight:600;font-size:.9rem}
 input,select,textarea{width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
+ul.f{margin:10px 0 0;padding-left:20px}ul.f li{margin-bottom:8px}.note{font-size:.85rem;color:var(--mut);margin-top:12px}
 footer{text-align:center;color:var(--mut);padding:34px 0 40px;font-size:.88rem}
 </style>
 </head>
@@ -85,6 +86,25 @@ footer{text-align:center;color:var(--mut);padding:34px 0 40px;font-size:.88rem}
   <div class="card">Have a room or house available? Send us the area, rent, deposit and photos on WhatsApp and we will list it and find you a tenant.
   <p><a class="btn" id="ll" href="#">Send my listing</a></p></div>
 </section>
+<section id="leases">
+  <h2>Custom lease agreements for landlords</h2>
+  <div class="card">
+    <p style="margin-top:0">A lease written for your property and your house rules, so everything is agreed in writing before the tenant moves in.</p>
+    <b>How it protects you</b>
+    <ul class="f">
+      <li><b>Written proof.</b> Under the Rental Housing Act 50 of 1999, a landlord must give the tenant a written lease if the tenant asks for one. Having it ready from day one avoids disputes about what was agreed.</li>
+      <li><b>Clear grounds to act.</b> A landlord may require a tenant to leave early if the tenant breaches the lease and does not fix it in time, or on terms stated in the lease that are not an unfair practice. Those terms must be written down.</li>
+      <li><b>Deposit done right.</b> The law requires the deposit to be held in an interest-bearing account, with a joint inspection at the end. It must be refunded within 7 days if there is no damage, 14 days after repairs, or 21 days if the tenant refuses the joint inspection. Your lease sets out each step so you stay compliant.</li>
+      <li><b>Fair damage claims.</b> The lease records the condition of the property and what counts as damage. For example, if a carpet already halfway through its life must be replaced, you can claim only 50% of the cost.</li>
+      <li><b>Avoid costly mistakes.</b> Cutting off water or electricity, changing locks or removing a tenant's belongings is a criminal offence. Eviction needs a court order under the PIE Act 19 of 1998 (Constitution s26(3)). A tenant gets 14 days to respond to the notice, and orders usually give about 30 days to vacate. Your lease sets out the notice and termination steps that make the process lawful.</li>
+      <li><b>Free dispute help.</b> The Rental Housing Tribunal hears landlord-tenant disputes at no cost, and its rulings are treated as Magistrate's Court orders. A signed lease is the first thing it asks for.</li>
+    </ul>
+    <p><b>What's included:</b> rent and due date, deposit terms, house rules, notice period, termination and breach clauses, and a property condition checklist. Fee quoted on request.</p>
+    <p><a class="btn" id="ls" href="#">Request my lease</a></p>
+    <div class="note">Ikhaya Rentals provides lease drafting, not legal advice. For court or complex disputes, speak to an attorney.</div>
+  </div>
+</section>
+
 </main>
 
 <footer>© Ikhaya Rentals · Rooms &amp; Houses to Rent · Agent fee R450 for all placements</footer>
@@ -100,6 +120,7 @@ document.getElementById("f").addEventListener("submit",function(e){
   window.open(wa(m),"_blank");
 });
 document.getElementById("ll").href=wa("Hi Ikhaya Rentals, I have a property to list. Area: , Rent: R , Deposit: R");
+document.getElementById("ls").href=wa("Hi Ikhaya Rentals, I would like a custom lease agreement. Property type and area: ");
 </script>
 </body>
 </html>
